@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Andrew Rogers">
+    <meta name="description" content="This page contains all the things I'm learning to create as I learn HTML">
+    <title>My First Web Page</title>
+    <link rel="icon" href="html_icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="main.css">
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <header> <!-- visually it doesn't change anything -->
+        <h1>Behold My Site!</h1>
+        <nav aria-label="primary-nav"> <!-- "aria-label" means that we're labeling this exact "nav" in case there are more of them, so we can tell the difference -->
+            <ul>
+                <li>
+                    <a href="#html">Learning HTML</a>
+                </li>
+                <li>
+                    <a href="#vacation">Planning A Vacation</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact Me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr> <!-- stands for horizontal line -->
+
+    <main> <!-- visually it doesn't change anything -->
+        <article id="html"> <!-- we can also use here the "section" tag. The "article" tag just more specific -->
+            <h2>I'm ready to learn HTML</h2>
+            <p>This is my first web page.</p>
+            <section>
+                <h3>HTML5</h3>
+                <img src="img/Rocky_Mountains1.jpg" alt="Rocky Mountains Lanscape in Colorado" title="Those Rocks Are Gorgeous Rocky Mountains!" width="1920" height="1080"> <!-- "alt" stands for the alt text when the image broken or spelled incorrectly; "title" appears when we mouse over -->
+                <figure>
+                    <figcaption>An Example of HTML Code</figcaption>
+                    <p>
+                        <code>&lt;h1&gt;Hello World!&lt;/h1&gt;</code> <!-- we use the "code" tag when we want to showcase a code example on the page -->
+                    </p>
+                </figure>
+            </section>
+            <section>
+                <h3>My Daily Schedule</h3>
+                <p>Lemme tell you how:</p>
+                <ol>
+                    <li>... I learn more about web dev</li> <!-- "ol" stands for "ordered list", "li" for list -->
+                    <li>... I plan out my schedule</li>
+                    <li>... I use resources from <abbr title="Mozilla Developer Network"><a href="https://developer.mozilla.org/en-US/">MDN</a></abbr></li> <!-- "abbr" stands for abbreviation, "href" stands for hypertext reference (it's an attribute) -->
+                </ol>
+                <aside> <!-- "aside" tag tells us that this item is the second importance, "details" mean that a paragraph is rolled up, "summary" tells us the info from this rolled up paragraph, "mark" means highlighted text -->
+                    <details>
+                        <summary>Guess the <mark>number of hours</mark> I code per day</summary>
+                        <p>I start at <time datetime="08:00">8 am</time> and I write code for <time datetime="PT4H">4 hours</time> every morning</p> <!-- "datetime" ain't changing nothing on our web page, it's just for our code -->
+                    </details>
+                </aside>
+                <br>
+                <table>
+                    <caption>My Daily Schedule</caption> <!-- "caption" tells us what our table is about -->
+                    <thead>
+                        <tr>
+                            <th scope="col">The Part Of The Day</th> <!-- the "scope" attribute doesn't change anything, it's just for our code" -->
+                            <th scope="col">Time</th> <!-- "th" stands for "table header" -->
+                            <th scope="col">Activity</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Morning</th>
+                            <td>
+                                <time datetime="08:00">8am</time>-<time datetime="12:00">12pm</time> <!-- "tr" stands for "table row", "td" for "table data" -->
+                            </td>
+                            <td>Write Code</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Lunch</th>
+                            <td>
+                                <time datetime="12:00">12pm</time>-<time datetime="01:00">1pm</time>
+                            </td>
+                            <td>Lunch Time</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Afternoon</th>
+                            <td>
+                                <time datetime="01:00">1pm</time>-<time datetime="05:00">5pm</time>
+                            </td>
+                            <td>Working On My YT videos, reading aloud in English</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Evening</th>
+                            <td rowspan="2">All Other Times</td>
+                            <td>Hiking, playing darts, singing songs in English, watch movies, series and play computer games in English</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Night</th>
+                            <td>Sleep</td>
+                        </tr>
+                    </tbody>
+                    <tfoot> <!-- we usually add "tfoot" at the end of the table to give some additional info -->
+                        <tr>
+                            <td colspan="3">And that's what I love to do</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="vacation">
+
+                <h2>I'm also planning a vacation</h2>
+                <p>I've been working hard and <em>really need a getaway</em></p> <!-- "em" stands for emphasize -->
+                <p>I live in Europe, and I wanna visit Rocky Mountains National Park (Colorado)</p>
+                <section>
+                    <h3>Places I wanna visit</h3>
+                    <ul> <!-- "ul" stands for "unordered list" -->
+                        <li>
+                            <p>English-speaking countries</p>
+                            <figure>
+                                <img src="img/Rocky_Mountains2.jpg" alt="Mind-refreshing place" title="That's how nature looks like!" width="1920" height="1080" loading="lazy"> <!-- "lazy" means that the image won't be loaded until we scroll closer to it -->
+                                <figcaption>
+                                    Perfect for hiking <!-- "figcapture" stands for the additional text for our image, and it's used along with the "figure" tag. The "figure" tag by itself won't do anything, it has to be paired with "figcapture" -->
+                                </figcaption>
+                            </figure>
+                        <li>
+                            <p>It's gonna be fun, ain't it</p>
+                                <address>
+                                    Aspen<br>
+                                    Colorado<br>
+                                    USA
+                                </address>
+                                <figure>
+                                    <img src="img/Rocky_Mountains3.jpg" alt="One More Rocky Mountains Image" title="Another site to behold" width="1920" height="1080" loading="lazy">
+                                    <figcaption>Endless possibilities for hiking</figcaption>
+                                </figure>
+                        </li>
+                    </ul>
+                </section>
+
+            <section>
+                <h3>Places I wanna avoid</h3>
+                <dl> <!-- "dl" stands for "description list" -->
+                    <dt>Deserts</dt> <!-- "dt" stands for "description term" -->
+                    <dd>Anywhere in the desert and where the <strong>heat is hot</strong></dd> <!-- "dd" stands for "description detail" -->
+                </dl>
+            </section>
+        </article>
+
+        <hr>
+
+        <article id="contact"> <!-- "id" means that this article related to the exact href in our nav bar, so we click it we can be redirected exactly to the bottom of the page where the contact field is -->
+            <h2>Contact Me</h2>
+            <p>I'd really like to hear from you!</p>
+
+            <form action="https://httpbin.org/get" method="get"> <!-- "action" means the text will be sent to this url, "method" defines what method it is -->
+                <fieldset> <!-- "fieldset" wrapping our form up-->
+                    <legend>My Personal Info</legend> <!-- "legend" tells us what the "form" is about -->
+                    <p>
+                        <label for="firstName">First Name</label> <!-- "label" prompts a user what has to be filled in in the input,"input" stands for the input field where a user can fill in the info -->
+                        <input type="text" name="firstName" id="firstName" placeholder="John" autocomplete="on" required autofocus> <!-- "placeholder" means it'll be filled in, "autocomplete" remembers you, "required" means that this field is required to proceed, "autofocus" can only be one, and it means that our cursor in there -->
+                    </p>
+                    <p>
+                        <label for="lastName">Last Name</label> <!-- "for", "name" and "id" attributes imply no visual difference, they more about functionality: "for" and "id" have to be the same because they connect the data to the specific input, "name" helps identify the form when it's sent to the server -->
+                        <input type="text" name="firstName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                    </p>
+                    <p>
+                        <label for="password">Password</label>
+                        <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                    </p>
+                    <p>
+                        <label for="phone">Phone</label>
+                        <input type="tel" name="phone" id="phone" placeholder="1234567890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </p>
+                    <p>
+                        <label for="decade">Favorite Decade of the 20th century</label>
+                        <input type="number" name="decade" id="decade" min="1900" max="1990" step="10" value="1920">
+                    </p>
+                    <!-- "multiple" means that we can select multiple choices, "size" is how many items we can see to select without scrolling down -->
+                    <!-- "optgroup" means a group for items -->
+                    <!-- the main reason for specifying the value attribute in <option> elements is to optimize how data is sent to the server -->
+                    <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <select name="coffee" id="coffee" multiple size="5">
+                            <optgroup label="Regular Coffees">
+                                <option value="plain coffee">Plain Coffee</option>
+                                <option value="iced coffee">Iced Coffee</option>
+                            </optgroup>
+                            <optgroup label="Espresso Drinks">
+                                <option value="latte">Latte</option>
+                                <option value="cappuccino">Cappuccino</option>
+                                <option value="cortado">Cortado</option>
+                                <option value="americano">Americano</option>
+                            </optgroup>
+                            <option value="other">Other</option>
+                        </select>
+                    </p>
+                    <!-- "option" here plays the visual role, "list" gives us the ability to choose from, "datalist" organizes the data for us to choose from-->
+                    <!-- <p>
+                        <label for="coffee">Favorite Coffee:</label>
+                        <input type="text" name="coffee" id="coffee" list="coffee-list">
+                        <datalist id="coffee-list">
+                            <option value="plain coffee">
+                            <option value="latte">
+                            <option value="espresso">
+                            <option value="cortado">
+                            <option value="americano">
+                            <option value="other">
+                        </datalist >
+                    </p> -->
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>What Is Your Favorite Food?</legend>
+                    <p>
+                        <input type="radio" name="food" id="tacos" value="tacos"> <!-- "radio" means how it will be displayed (the form), "input" before "label" because the name has to be displayed from the right -->
+                        <label for="tacos">Tacos</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="ice_cream" value="tacos">
+                        <label for="ice_cream">Ice Cream</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="food" id="other" value="tacos">
+                        <label for="other">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Do you have any pets?</legend>
+                    <p>
+                        <input type="checkbox" name="pets" id="dog" value="dog"> <!-- "checkbox" allows us to select as many choices as we want -->
+                        <label for="dog">Dog</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="cat" value="cat">
+                        <label for="cat">Cat</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="parrot" value="parrot">
+                        <label for="parrot">Parrot</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" name="pets" id="otherPets" value="otherPets">
+                        <label for="otherPets">Other</label>
+                    </p>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>Your Feedback</legend>
+                    <label for="msg">Your Message:</label>
+                    <br>
+                    <textarea name="msg" id="msg" cols="50" rows="12" placeholder="This is your message"></textarea> <!-- "textarea" allows you to type your text in, here in the code it's best to left it empty -->
+                </fieldset>
+                <br>
+                <button type="submit">Submit</button> <!-- "submit" sends our info to the server, whereas the "submit" with attributes sends it to where we determined -->
+                <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+                <button type="reset">Reset</button>
+            </form>
+        </article>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>
+            &lt;&lt;&lt; &copy; <a href="about.html">Andrew Rogers</a> &gt;&gt;&gt; <!-- "&lt" stands for the "less than" symbol, "&copy" for the "copyright" symbol -->
+        </p>
+        <p>
+            <a href="#">Back To Top</a> <!-- "#" stands for the very beginning of the page -->
+        </p>
+    </footer>
+</body>
+
+</html>
+
+<!-- we need to avoid the next tags: "div" and "span" -->
